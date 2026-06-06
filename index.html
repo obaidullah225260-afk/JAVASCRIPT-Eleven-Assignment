@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="faviconimage/favicon.png"
+      type="image/x-icon"
+    />
+    <title>The Post Cracker</title>
+  </head>
+  <style>
+    body {
+      font-family: "Genos", sans-serif;
+      background-color: rgba(23, 143, 93, 0.664);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(277deg, #123c1f 0%, #1c8d4b 3%, #123c25 100%);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    .head {
+      background-color: rgba(23, 143, 93, 0.664);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(0px);
+      animation: inHead 4s ease-out;
+      box-shadow: 0 0 20px rgba(53, 52, 52, 0.733);
+      backdrop-filter: blur(7px);
+    }
+
+    @keyframes inHead {
+      from {
+        transform: translateY(-200px);
+      }
+
+      to {
+        transform: translateY(0px);
+      }
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+    }
+
+    .left img {
+      width: 400px;
+      transform: rotate3d(4, 3, -1, 30deg);
+    }
+
+    .left {
+      transform: translateX(0px);
+      animation: inLeft 0.8s ease-in-out;
+    }
+
+    @keyframes inLeft {
+      from {
+        transform: translateX(-200px);
+      }
+
+      to {
+        transform: translateX(0px);
+      }
+    }
+
+    @keyframes inRight {
+      from {
+        transform: translateX(200px);
+      }
+
+      to {
+        transform: translateX(0px);
+      }
+    }
+
+    .right {
+      font-size: 23px;
+      line-height: 40px;
+      transform: translateX(0px);
+      animation: inRight 0.8s ease-out;
+    }
+
+    .right .a1 {
+      background-color: rgba(23, 143, 93, 0.664);
+      color: #fff;
+      text-decoration: none;
+      padding: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border-radius: 50px;
+      box-shadow: inset 5px 3px 10px #65df8a;
+      transition: 0.1s ease;
+    }
+
+    .right .a2 {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 50px;
+      border: solid 1px #65df80;
+      box-shadow: inset 1px 1px 2px #65df9c;
+      transition: 0.1s ease;
+    }
+
+    .right a:hover {
+      background-color: #2db672;
+    }
+
+    video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      background-size: cover;
+      object-fit: cover;
+      opacity: 20%;
+    }
+  </style>
+
+  <body>
+    <div class="head">
+      <img src="logo.png" alt="" width="100px" />
+      <h1>The Post Cracker</h1>
+    </div>
+    <div class="main">
+      <div class="left">
+        <img src="logo.png" alt="image not show" />
+      </div>
+      <div class="right">
+        <h1>
+          ADD Your Daily Post, <br />
+          Share Your Experience
+        </h1>
+        <br />
+        <a href="post.html" class="a1">Get Started</a>
+        <a
+          href="https://github.com/obaidullah225260-afk"
+          target="_blank"
+          class="a2"
+          >By Obaidullah</a
+        >
+      </div>
+    </div>
+    <video src="bg.mp4" autoplay mute loop></video>
+  </body>
+</html>
